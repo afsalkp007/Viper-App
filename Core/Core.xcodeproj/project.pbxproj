@@ -37,7 +37,7 @@
 		F44344512C43C64700FD8CCE /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44343582C43169D00FD8CCE /* Core.framework */; platformFilter = ios; };
 		F44344592C43C75700FD8CCE /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44344472C43C1BC00FD8CCE /* XCTestCase+MemoryLeakTracking.swift */; };
 		F443445A2C43C75A00FD8CCE /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44344452C43C15300FD8CCE /* SharedTestHelpers.swift */; };
-		F443445C2C43C9DF00FD8CCE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F443445B2C43C9DF00FD8CCE /* README.md */; };
+		F44344612C43D96700FD8CCE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F44344602C43D96700FD8CCE /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +89,7 @@
 		F443444D2C43C64700FD8CCE /* APIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F443444F2C43C64700FD8CCE /* APIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndToEndTests.swift; sourceTree = "<group>"; };
 		F44344572C43C68800FD8CCE /* APIEndToEndTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = APIEndToEndTests.xctestplan; sourceTree = "<group>"; };
-		F443445B2C43C9DF00FD8CCE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F44344602C43D96700FD8CCE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,7 @@
 		F443434E2C43169D00FD8CCE = {
 			isa = PBXGroup;
 			children = (
-				F443445B2C43C9DF00FD8CCE /* README.md */,
+				F44344602C43D96700FD8CCE /* README.md */,
 				F443435A2C43169D00FD8CCE /* Core */,
 				F44344312C43C02B00FD8CCE /* CoreTests */,
 				F443444E2C43C64700FD8CCE /* APIEndToEndTests */,
@@ -383,7 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F443445C2C43C9DF00FD8CCE /* README.md in Resources */,
+				F44344612C43D96700FD8CCE /* README.md in Resources */,
 				F44343F82C43184E00FD8CCE /* Store.xcdatamodeld in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
