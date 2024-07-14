@@ -1,8 +1,8 @@
 //
 //  URLSessionHTTPClient.swift
-//  EssentialFeed
+//  Core
 //
-//  Created by Afsal on 15/03/2024.
+//  Created by Afsal on 14/07/2024.
 //
 
 import Foundation

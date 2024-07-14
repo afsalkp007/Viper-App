@@ -1,8 +1,8 @@
 //
 //  ListCell.swift
-//  EssentialFeediOS
+//  ModuleA
 //
-//  Created by Afsal on 03/04/2024.
+//  Created by Afsal on 13/07/2024.
 //
 
 import UIKit

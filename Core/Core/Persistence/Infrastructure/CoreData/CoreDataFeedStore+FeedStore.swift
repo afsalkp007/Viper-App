@@ -1,8 +1,8 @@
 //
-//  CoreDataListStore+FeedStore.swift
-//  EssentialFeed
+//  CoreDataListStore+ListStore.swift
+//  Core
 //
-//  Created by Afsal on 26/04/2024.
+//  Created by Afsal on 14/07/2024.
 //
 
 import Foundation
@@ -18,11 +18,11 @@ extension CoreDataListStore: ListStore {
     }
   }
   
-  public func insert(_ items: [LocalListItem], completion: @escaping InsertionCompletion) {
+  public func insert(_ feed: [LocalListItem], completion: @escaping InsertionCompletion) {
     perform { context in
       completion(Result {
         let managedCache = try ManagedCache.newUniqueInstance(in: context)
-        managedCache.feed = ManagedListItem.images(from: items, in: context)
+        managedCache.feed = ManagedListItem.images(from: feed, in: context)
         
         try context.save()
       })

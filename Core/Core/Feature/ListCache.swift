@@ -1,8 +1,8 @@
 //
-//  FeedCache.swift
-//  EssentialFeed
+//  ListCache.swift
+//  Core
 //
-//  Created by Afsal on 28/04/2024.
+//  Created by Afsal on 14/07/2024.
 //
 
 import Foundation

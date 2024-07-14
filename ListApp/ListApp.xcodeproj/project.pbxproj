@@ -12,8 +12,8 @@
 		F412FF762C42998A00452CB6 /* ListViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FF742C42998100452CB6 /* ListViewAdapter.swift */; };
 		F412FF7C2C42A0AA00452CB6 /* ModuleB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F412FF7B2C42A0AA00452CB6 /* ModuleB.framework */; };
 		F412FF7D2C42A0AA00452CB6 /* ModuleB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F412FF7B2C42A0AA00452CB6 /* ModuleB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F412FF7F2C42A12F00452CB6 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FF7E2C42A12F00452CB6 /* FeedLoaderWithFallbackComposite.swift */; };
-		F412FF822C42A15800452CB6 /* FeedLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FF802C42A15700452CB6 /* FeedLoaderCacheDecorator.swift */; };
+		F412FF7F2C42A12F00452CB6 /* ListLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FF7E2C42A12F00452CB6 /* ListLoaderWithFallbackComposite.swift */; };
+		F412FF822C42A15800452CB6 /* ListLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FF802C42A15700452CB6 /* ListLoaderCacheDecorator.swift */; };
 		F412FF832C42A15800452CB6 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FF812C42A15800452CB6 /* MainQueueDispatchDecorator.swift */; };
 		F412FF852C42A16D00452CB6 /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FF842C42A16D00452CB6 /* WeakRefVirtualProxy.swift */; };
 		F412FF8D2C42ABCF00452CB6 /* ListUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FF8C2C42ABCF00452CB6 /* ListUIComposer.swift */; };
@@ -44,8 +44,8 @@
 		F412FE052C41A28A00452CB6 /* ModuleB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F412FF742C42998100452CB6 /* ListViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewAdapter.swift; sourceTree = "<group>"; };
 		F412FF7B2C42A0AA00452CB6 /* ModuleB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F412FF7E2C42A12F00452CB6 /* FeedLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
-		F412FF802C42A15700452CB6 /* FeedLoaderCacheDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLoaderCacheDecorator.swift; sourceTree = "<group>"; };
+		F412FF7E2C42A12F00452CB6 /* ListLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
+		F412FF802C42A15700452CB6 /* ListLoaderCacheDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLoaderCacheDecorator.swift; sourceTree = "<group>"; };
 		F412FF812C42A15800452CB6 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		F412FF842C42A16D00452CB6 /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
 		F412FF8C2C42ABCF00452CB6 /* ListUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUIComposer.swift; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		F412FF6E2C42998000452CB6 /* Composite */ = {
 			isa = PBXGroup;
 			children = (
-				F412FF7E2C42A12F00452CB6 /* FeedLoaderWithFallbackComposite.swift */,
+				F412FF7E2C42A12F00452CB6 /* ListLoaderWithFallbackComposite.swift */,
 			);
 			path = Composite;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 		F412FF712C42998100452CB6 /* Decorators */ = {
 			isa = PBXGroup;
 			children = (
-				F412FF802C42A15700452CB6 /* FeedLoaderCacheDecorator.swift */,
+				F412FF802C42A15700452CB6 /* ListLoaderCacheDecorator.swift */,
 				F412FF812C42A15800452CB6 /* MainQueueDispatchDecorator.swift */,
 			);
 			path = Decorators;
@@ -236,9 +236,9 @@
 				F463A0EC2BE314FB00CD161C /* AppDelegate.swift in Sources */,
 				F412FF8D2C42ABCF00452CB6 /* ListUIComposer.swift in Sources */,
 				F412FF832C42A15800452CB6 /* MainQueueDispatchDecorator.swift in Sources */,
-				F412FF7F2C42A12F00452CB6 /* FeedLoaderWithFallbackComposite.swift in Sources */,
+				F412FF7F2C42A12F00452CB6 /* ListLoaderWithFallbackComposite.swift in Sources */,
 				F463A0EE2BE314FB00CD161C /* SceneDelegate.swift in Sources */,
-				F412FF822C42A15800452CB6 /* FeedLoaderCacheDecorator.swift in Sources */,
+				F412FF822C42A15800452CB6 /* ListLoaderCacheDecorator.swift in Sources */,
 				F412FF852C42A16D00452CB6 /* WeakRefVirtualProxy.swift in Sources */,
 				F412FF762C42998A00452CB6 /* ListViewAdapter.swift in Sources */,
 			);

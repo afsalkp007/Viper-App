@@ -1,19 +1,17 @@
 //
-//  FeedImagePresenter.swift
-//  EssentialFeed
+//  ListCellPresenter.swift
+//  ModuleA
 //
-//  Created by Afsal on 22/04/2024.
+//  Created by Afsal on 13/07/2024.
 //
 
 import Core
 
 public final class ListCellPresenter: ListCellPresenterProtocol {
   private let view: ListCellViewProtocol
-  public let router: ListViewRouterProtocol
   
-  public init(view: ListCellViewProtocol, router: ListViewRouterProtocol) {
+  public init(view: ListCellViewProtocol) {
     self.view = view
-    self.router = router
   }
   
   public func loadData(for model: University) {

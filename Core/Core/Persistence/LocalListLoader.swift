@@ -1,13 +1,13 @@
 //
 //  LocalFeedLoader.swift
-//  EssentialFeed
+//  Core
 //
-//  Created by Afsal on 18/03/2024.
+//  Created by Afsal on 14/07/2024.
 //
 
 import Foundation
 
-public final class LocalFeedLoader {
+public final class LocalListLoader {
   private let store: ListStore
   
   public init(store: ListStore) {
@@ -15,7 +15,7 @@ public final class LocalFeedLoader {
   }
 }
 
-extension LocalFeedLoader: ListCache {
+extension LocalListLoader: ListCache {
   public typealias SaveResult = ListCache.Result
   
   public func save(_ feed: [University], completion: @escaping (SaveResult) -> Void) {
@@ -32,8 +32,8 @@ extension LocalFeedLoader: ListCache {
     }
   }
   
-  private func cache(_ items: [University], completion: @escaping (SaveResult) -> Void) {
-    store.insert(items.toLocal(), completion: { [weak self] result in
+  private func cache(_ feed: [University], completion: @escaping (SaveResult) -> Void) {
+    store.insert(feed.toLocal(), completion: { [weak self] result in
       guard self != nil else { return }
       
       switch result {
@@ -47,7 +47,7 @@ extension LocalFeedLoader: ListCache {
   }
 }
 
-extension LocalFeedLoader: ListLoader {
+extension LocalListLoader: ListLoader {
   enum Error: Swift.Error {
     case emptyData
   }

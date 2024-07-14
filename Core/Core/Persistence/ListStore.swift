@@ -1,8 +1,8 @@
 //
-//  FeedStore.swift
-//  EssentialFeed
+//  ListStore.swift
+//  Core
 //
-//  Created by Afsal on 18/03/2024.
+//  Created by Afsal on 14/07/2024.
 //
 
 import Foundation

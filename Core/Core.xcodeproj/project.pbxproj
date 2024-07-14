@@ -10,14 +10,14 @@
 		F44343D32C4317D900FD8CCE /* ListCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343D12C4317D900FD8CCE /* ListCache.swift */; };
 		F44343D42C4317D900FD8CCE /* ListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343D22C4317D900FD8CCE /* ListLoader.swift */; };
 		F44343DB2C4317F100FD8CCE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343D62C4317F000FD8CCE /* HTTPClient.swift */; };
-		F44343DC2C4317F100FD8CCE /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343D72C4317F000FD8CCE /* RemoteFeedLoader.swift */; };
-		F44343DD2C4317F100FD8CCE /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343D82C4317F000FD8CCE /* FeedItemsMapper.swift */; };
-		F44343DE2C4317F100FD8CCE /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343D92C4317F000FD8CCE /* RemoteFeedItem.swift */; };
+		F44343DC2C4317F100FD8CCE /* RemoteListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343D72C4317F000FD8CCE /* RemoteListLoader.swift */; };
+		F44343DD2C4317F100FD8CCE /* ListItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343D82C4317F000FD8CCE /* ListItemsMapper.swift */; };
+		F44343DE2C4317F100FD8CCE /* RemoteListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343D92C4317F000FD8CCE /* RemoteListItem.swift */; };
 		F44343DF2C4317F100FD8CCE /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343DA2C4317F100FD8CCE /* URLSessionHTTPClient.swift */; };
 		F44343E22C43180000FD8CCE /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343E12C43180000FD8CCE /* HTTPURLResponse+StatusCode.swift */; };
 		F44343E72C43181A00FD8CCE /* ListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343E42C43181A00FD8CCE /* ListStore.swift */; };
 		F44343E82C43181A00FD8CCE /* LocalListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343E52C43181A00FD8CCE /* LocalListItem.swift */; };
-		F44343E92C43181A00FD8CCE /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343E62C43181A00FD8CCE /* LocalFeedLoader.swift */; };
+		F44343E92C43181A00FD8CCE /* LocalListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343E62C43181A00FD8CCE /* LocalListLoader.swift */; };
 		F44343F12C43183800FD8CCE /* ManagedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343EC2C43183700FD8CCE /* ManagedCache.swift */; };
 		F44343F22C43183800FD8CCE /* CoreDataFeedStore+FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343ED2C43183700FD8CCE /* CoreDataFeedStore+FeedStore.swift */; };
 		F44343F32C43183800FD8CCE /* CoreDataListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343EE2C43183700FD8CCE /* CoreDataListStore.swift */; };
@@ -33,14 +33,14 @@
 		F44343D12C4317D900FD8CCE /* ListCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCache.swift; sourceTree = "<group>"; };
 		F44343D22C4317D900FD8CCE /* ListLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLoader.swift; sourceTree = "<group>"; };
 		F44343D62C4317F000FD8CCE /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		F44343D72C4317F000FD8CCE /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
-		F44343D82C4317F000FD8CCE /* FeedItemsMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
-		F44343D92C4317F000FD8CCE /* RemoteFeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
+		F44343D72C4317F000FD8CCE /* RemoteListLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteListLoader.swift; sourceTree = "<group>"; };
+		F44343D82C4317F000FD8CCE /* ListItemsMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemsMapper.swift; sourceTree = "<group>"; };
+		F44343D92C4317F000FD8CCE /* RemoteListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteListItem.swift; sourceTree = "<group>"; };
 		F44343DA2C4317F100FD8CCE /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		F44343E12C43180000FD8CCE /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
 		F44343E42C43181A00FD8CCE /* ListStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListStore.swift; sourceTree = "<group>"; };
 		F44343E52C43181A00FD8CCE /* LocalListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalListItem.swift; sourceTree = "<group>"; };
-		F44343E62C43181A00FD8CCE /* LocalFeedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
+		F44343E62C43181A00FD8CCE /* LocalListLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalListLoader.swift; sourceTree = "<group>"; };
 		F44343EC2C43183700FD8CCE /* ManagedCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedCache.swift; sourceTree = "<group>"; };
 		F44343ED2C43183700FD8CCE /* CoreDataFeedStore+FeedStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedStore.swift"; sourceTree = "<group>"; };
 		F44343EE2C43183700FD8CCE /* CoreDataListStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataListStore.swift; sourceTree = "<group>"; };
@@ -103,10 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				F44343E02C4317F300FD8CCE /* Helpers */,
-				F44343D82C4317F000FD8CCE /* FeedItemsMapper.swift */,
+				F44343D82C4317F000FD8CCE /* ListItemsMapper.swift */,
 				F44343D62C4317F000FD8CCE /* HTTPClient.swift */,
-				F44343D92C4317F000FD8CCE /* RemoteFeedItem.swift */,
-				F44343D72C4317F000FD8CCE /* RemoteFeedLoader.swift */,
+				F44343D92C4317F000FD8CCE /* RemoteListItem.swift */,
+				F44343D72C4317F000FD8CCE /* RemoteListLoader.swift */,
 				F44343DA2C4317F100FD8CCE /* URLSessionHTTPClient.swift */,
 			);
 			path = API;
@@ -125,7 +125,7 @@
 			children = (
 				F44343EA2C43182500FD8CCE /* Infrastructure */,
 				F44343E42C43181A00FD8CCE /* ListStore.swift */,
-				F44343E62C43181A00FD8CCE /* LocalFeedLoader.swift */,
+				F44343E62C43181A00FD8CCE /* LocalListLoader.swift */,
 				F44343E52C43181A00FD8CCE /* LocalListItem.swift */,
 			);
 			path = Persistence;
@@ -240,16 +240,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44343DF2C4317F100FD8CCE /* URLSessionHTTPClient.swift in Sources */,
-				F44343DD2C4317F100FD8CCE /* FeedItemsMapper.swift in Sources */,
-				F44343DC2C4317F100FD8CCE /* RemoteFeedLoader.swift in Sources */,
-				F44343DE2C4317F100FD8CCE /* RemoteFeedItem.swift in Sources */,
+				F44343DD2C4317F100FD8CCE /* ListItemsMapper.swift in Sources */,
+				F44343DC2C4317F100FD8CCE /* RemoteListLoader.swift in Sources */,
+				F44343DE2C4317F100FD8CCE /* RemoteListItem.swift in Sources */,
 				F44343E82C43181A00FD8CCE /* LocalListItem.swift in Sources */,
 				F44343D42C4317D900FD8CCE /* ListLoader.swift in Sources */,
 				F44343F52C43183800FD8CCE /* CoreDataHelpers.swift in Sources */,
 				F44343F12C43183800FD8CCE /* ManagedCache.swift in Sources */,
 				F44343D32C4317D900FD8CCE /* ListCache.swift in Sources */,
 				F44344002C431A8700FD8CCE /* University.swift in Sources */,
-				F44343E92C43181A00FD8CCE /* LocalFeedLoader.swift in Sources */,
+				F44343E92C43181A00FD8CCE /* LocalListLoader.swift in Sources */,
 				F44343F42C43183800FD8CCE /* ManagedListItem.swift in Sources */,
 				F44343E22C43180000FD8CCE /* HTTPURLResponse+StatusCode.swift in Sources */,
 				F443440C2C431F8700FD8CCE /* Localized.swift in Sources */,
@@ -412,7 +412,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.ListApp.Core.Core;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.ListApp.Core;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -450,7 +450,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.ListApp.Core.Core;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.ListApp.Core;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

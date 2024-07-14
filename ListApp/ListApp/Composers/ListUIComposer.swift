@@ -15,11 +15,12 @@ final class ListUIComposer {
     with loader: ListLoader, 
     selection: @escaping (University) -> Void) -> ListViewController {
     let controller = ListViewRouter.assemble(with: Localized.List.title)
-        
+    
+    let router = ListViewRouter()
     let interactor = ListViewInteractor(
       loader: MainQueueDispatchDecorator(decoratee: loader))
     let presenter = ListViewPresenter(
-      interactor: interactor)
+      interactor: interactor, router: router)
     
     presenter.listView = ListViewAdapter(
       controller: controller,

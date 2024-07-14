@@ -1,8 +1,8 @@
 //
-//  FeedImageViewModel.swift
-//  EssentialFeed
+//  ListCellViewModel.swift
+//  ModuleA
 //
-//  Created by Afsal on 22/04/2024.
+//  Created by Afsal on 13/07/2024.
 //
 
 public struct ListCellViewModel {

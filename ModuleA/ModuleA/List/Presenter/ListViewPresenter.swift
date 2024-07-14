@@ -1,21 +1,22 @@
 //
 //  ListViewPresenter.swift
-//  ListDetail-Viper
+//  ModuleA
 //
-//  Created by Afsal on 12/07/2024.
+//  Created by Afsal on 13/07/2024.
 //
 
 import Core
 
 public final class ListViewPresenter: ListViewPresenterProtocol {
-  
   public var listView: ListViewProtocol?
   public var listLoadingView: ListLoadingViewProtocol?
   public var listErrorView: ListErrorViewProtocol?
+  public let router: ListViewRouterProtocol
   public let interactor: ListViewInteractorInputProtocol
 
-  public init(interactor: ListViewInteractorInputProtocol) {
+  public init(interactor: ListViewInteractorInputProtocol, router: ListViewRouterProtocol) {
     self.interactor = interactor
+    self.router = router
   }
   
   public func requestsUniversities() {
@@ -25,8 +26,8 @@ public final class ListViewPresenter: ListViewPresenterProtocol {
 }
 
 extension ListViewPresenter: ListViewInteractoryOutputProtocol {
-  public func didFinishLoading(with items: [University]) {
-    listView?.display(ListViewModel(items: items))
+  public func didFinishLoading(with feed: [University]) {
+    listView?.display(ListViewModel(feed: feed))
     listLoadingView?.display(ListLoadingViewModel(isLoading: false))
   }
   

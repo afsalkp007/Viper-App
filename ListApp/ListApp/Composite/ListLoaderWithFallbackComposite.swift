@@ -1,13 +1,13 @@
 //
-//  FeedLoaderWithFallbackComposite.swift
-//  EssentialApp
+//  ListLoaderWithFallbackComposite.swift
+//  ListApp
 //
-//  Created by Afsal on 27/04/2024.
+//  Created by Afsal on 13/07/2024.
 //
 
 import Core
 
-public final class FeedLoaderWithFallbackComposite: ListLoader {
+public final class ListLoaderWithFallbackComposite: ListLoader {
   private let primary: ListLoader
   private let fallback: ListLoader
   

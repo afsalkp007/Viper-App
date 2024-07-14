@@ -1,8 +1,8 @@
 //
 //  Protocols.swift
-//  ListDetail-Viper
+//  ModuleA
 //
-//  Created by Afsal on 12/07/2024.
+//  Created by Afsal on 13/07/2024.
 //
 
 import Core
@@ -23,6 +23,7 @@ public protocol ListViewPresenterProtocol: AnyObject {
   var listView: ListViewProtocol? {get set}
   var listLoadingView: ListLoadingViewProtocol? {get set}
   var listErrorView: ListErrorViewProtocol? {get set}
+  var router: ListViewRouterProtocol {get}
   var interactor: ListViewInteractorInputProtocol {get}
 
   func requestsUniversities()
@@ -34,12 +35,11 @@ public protocol ListViewInteractorInputProtocol: AnyObject {
 }
 
 public protocol ListViewInteractoryOutputProtocol: AnyObject {
-  func didFinishLoading(with items: [University])
+  func didFinishLoading(with feed: [University])
   func didFinishLoading(with error: String)
 }
 
 public protocol ListViewRouterProtocol: AnyObject {
-  //unc pushToDetail(with title: String, model: University)
   static func assemble(with title: String) -> ListViewController
 }
 
@@ -48,8 +48,6 @@ public protocol ListCellViewProtocol {
 }
 
 public protocol ListCellPresenterProtocol {
-  var router: ListViewRouterProtocol {get}
-  
   func loadData(for model: University)
 }
 

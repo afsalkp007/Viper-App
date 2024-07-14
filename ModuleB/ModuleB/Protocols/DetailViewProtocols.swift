@@ -1,6 +1,6 @@
 //
 //  DetailViewProtocols.swift
-//  ListDetail-Viper
+//  ModuleB
 //
 //  Created by Afsal on 13/07/2024.
 //

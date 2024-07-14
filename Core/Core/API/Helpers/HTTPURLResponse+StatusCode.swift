@@ -1,8 +1,8 @@
 //
 //  HTTPURLResponse+StatusCode.swift
-//  EssentialFeed
+//  Core
 //
-//  Created by Afsal on 23/04/2024.
+//  Created by Afsal on 14/07/2024.
 //
 
 import Foundation

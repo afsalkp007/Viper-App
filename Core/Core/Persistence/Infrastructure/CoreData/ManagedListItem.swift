@@ -1,8 +1,8 @@
 //
-//  ManagedFeedImage.swift
-//  EssentialFeed
+//  ManagedListItem.swift
+//  Core
 //
-//  Created by Afsal on 28/03/2024.
+//  Created by Afsal on 14/07/2024.
 //
 
 import Foundation

@@ -1,8 +1,8 @@
 //
 //  UITableView+HeaderSizing.swift
-//  EssentialFeediOS
+//  ModuleA
 //
-//  Created by Afsal on 01/05/2024.
+//  Created by Afsal on 13/07/2024.
 //
 
 import UIKit

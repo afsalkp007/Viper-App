@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  ListApp
 //
-//  Created by Afsal on 02/05/2024.
+//  Created by Afsal on 13/07/2024.
 //
 
 import UIKit
@@ -22,19 +22,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     try! CoreDataListStore(
       storeURL: NSPersistentContainer
       .defaultDirectoryURL()
-      .appendingPathComponent("feed-store.sqlite"))
+      .appendingPathComponent("list-store.sqlite"))
   }()
   
-  private lazy var localFeedLoader: LocalFeedLoader = {
-    LocalFeedLoader(store: store)
+  private lazy var localListLoader: LocalListLoader = {
+    LocalListLoader(store: store)
   }()
   
   private lazy var listViewController: ListViewController = {
-    let listLoader = FeedLoaderWithFallbackComposite(
-      primary: FeedLoaderCacheDecorator(
-        decoratee: makeRemoteFeedLoader(),
-        cache: localFeedLoader),
-      fallback: localFeedLoader)
+    let listLoader = ListLoaderWithFallbackComposite(
+      primary: ListLoaderCacheDecorator(
+        decoratee: makeRemoteListLoader(),
+        cache: localListLoader),
+      fallback: localListLoader)
 
     return ListUIComposer.listComposedWith(
       with: listLoader,
@@ -63,9 +63,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     window?.makeKeyAndVisible()
   }
   
-  private func makeRemoteFeedLoader() -> RemoteFeedLoader {
+  private func makeRemoteListLoader() -> RemoteListLoader {
     let remoteURL = URL(string: "http://universities.hipolabs.com/search?country=United%20Arab%20Emirates")!
-    return RemoteFeedLoader(url: remoteURL, client: httpClient)
+    return RemoteListLoader(url: remoteURL, client: httpClient)
   }
   
   private func showDetailView(for model: University) {

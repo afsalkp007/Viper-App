@@ -1,8 +1,8 @@
 //
 //  DetailViewModel.swift
-//  ListEngine
+//  ModuleB
 //
-//  Created by Afsal on 03/05/2024.
+//  Created by Afsal on 13/07/2024.
 //
 
 import Foundation

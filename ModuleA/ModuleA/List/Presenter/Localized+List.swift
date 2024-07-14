@@ -1,8 +1,8 @@
 //
 //  Localized+List.swift
-//  EssentialFeed
+//  ModuleA
 //
-//  Created by Afsal on 22/04/2024.
+//  Created by Afsal on 13/07/2024.
 //
 
 import Foundation
@@ -17,7 +17,7 @@ public extension Localized {
         "LIST_VIEW_TITLE",
         tableName: list,
         bundle: Bundle(for: ListViewPresenter.self),
-        comment: "Title for the feed view"
+        comment: "Title for the list view"
       )
     }
     
@@ -26,7 +26,7 @@ public extension Localized {
         "LIST_VIEW_CONNECTION_ERROR",
         tableName: list,
         bundle: Bundle(for: ListViewPresenter.self),
-        comment: "Error message for the feed error view"
+        comment: "Error message for the list error view"
       )
     }
   }

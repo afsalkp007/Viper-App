@@ -1,6 +1,6 @@
 //
 //  ListViewModel.swift
-//  ListDetail-Viper
+//  ModuleA
 //
 //  Created by Afsal on 13/07/2024.
 //
@@ -8,5 +8,5 @@
 import Core
 
 public struct ListViewModel {
-  public let items: [University]
+  public let feed: [University]
 }

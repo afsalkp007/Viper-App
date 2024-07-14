@@ -1,13 +1,13 @@
 //
-//  FeedLoaderCacheDecorator.swift
-//  EssentialApp
+//  ListLoaderCacheDecorator.swift
+//  ListApp
 //
-//  Created by Afsal on 28/04/2024.
+//  Created by Afsal on 13/07/2024.
 //
 
 import Core
 
-public class FeedLoaderCacheDecorator: ListLoader {
+public class ListLoaderCacheDecorator: ListLoader {
   private let decoratee: ListLoader
   private let cache: ListCache
   

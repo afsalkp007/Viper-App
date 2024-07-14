@@ -1,8 +1,8 @@
 //
-//  FeedViewAdapter.swift
-//  EssentialFeediOS
+//  ListViewAdapter.swift
+//  ListApp
 //
-//  Created by Afsal on 18/04/2024.
+//  Created by Afsal on 13/07/2024.
 //
 
 import Core
@@ -19,15 +19,13 @@ final class ListViewAdapter: ListViewProtocol {
   
   func display(_ viewModel: ListViewModel) {
     let controller = self.controller
-    controller?.display(viewModel.items.map { [weak self] model in
+    controller?.display(viewModel.feed.map { [weak self] model in
       let view = ListCellController(model: model, selection: {
         self?.selection(model)
       })
-      let router = ListViewRouter()
       
       view.presenter = ListCellPresenter(
-        view: WeakRefVirtualProxy(view),
-        router: router)
+        view: WeakRefVirtualProxy(view))
 
       return view
     })

@@ -1,13 +1,13 @@
 //
-//  RemoteFeedLoader.swift
-//  EssentialFeed
+//  RemoteListLoader.swift
+//  Core
 //
-//  Created by Afsal on 12/03/2024.
+//  Created by Afsal on 14/07/2024.
 //
 
 import Foundation
 
-public final class RemoteFeedLoader: ListLoader {
+public final class RemoteListLoader: ListLoader {
   private let url: URL
   private let client: HTTPClient
   
@@ -17,7 +17,7 @@ public final class RemoteFeedLoader: ListLoader {
   }
 }
  
-extension RemoteFeedLoader {
+extension RemoteListLoader {
   enum Error: Swift.Error {
     case connectivity
     case invalidData
@@ -40,15 +40,15 @@ extension RemoteFeedLoader {
   
   private static func map(_ data: Data, from response: HTTPURLResponse) -> Result {
     do {
-      let items = try FeedItemsMapper.map(data, from: response)
-      return .success(items.toModels())
+      let feed = try ListItemsMapper.map(data, from: response)
+      return .success(feed.toModels())
     } catch {
       return .failure(error)
     }
   }
 }
 
-private extension Array where Element == RemoteFeedItem {
+private extension Array where Element == RemoteListItem {
   func toModels() -> [University] {
     return map { University(name: $0.name, country: $0.country, code: $0.code, state: $0.state, webpage: $0.webpage) }
   }

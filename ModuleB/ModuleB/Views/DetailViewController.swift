@@ -1,8 +1,8 @@
 //
 //  DetailViewController.swift
-//  LIstiOS
+//  ModuleB
 //
-//  Created by Afsal on 02/05/2024.
+//  Created by Afsal on 13/07/2024.
 //
 
 import UIKit
