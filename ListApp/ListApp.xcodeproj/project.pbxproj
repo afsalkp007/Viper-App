@@ -18,6 +18,8 @@
 		F412FF852C42A16D00452CB6 /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FF842C42A16D00452CB6 /* WeakRefVirtualProxy.swift */; };
 		F412FF8D2C42ABCF00452CB6 /* ListUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FF8C2C42ABCF00452CB6 /* ListUIComposer.swift */; };
 		F412FF8F2C42AD4000452CB6 /* DetailUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412FF8E2C42AD4000452CB6 /* DetailUIComposer.swift */; };
+		F443445E2C43D1A300FD8CCE /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F443445D2C43D1A300FD8CCE /* Core.framework */; };
+		F443445F2C43D1A300FD8CCE /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F443445D2C43D1A300FD8CCE /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F463A0EC2BE314FB00CD161C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463A0EB2BE314FB00CD161C /* AppDelegate.swift */; };
 		F463A0EE2BE314FB00CD161C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463A0ED2BE314FB00CD161C /* SceneDelegate.swift */; };
 		F463A0F52BE314FD00CD161C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F463A0F42BE314FD00CD161C /* Assets.xcassets */; };
@@ -32,6 +34,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F412FDCF2C419D8D00452CB6 /* ModuleA.framework in Embed Frameworks */,
+				F443445F2C43D1A300FD8CCE /* Core.framework in Embed Frameworks */,
 				F412FF7D2C42A0AA00452CB6 /* ModuleB.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -50,6 +53,7 @@
 		F412FF842C42A16D00452CB6 /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
 		F412FF8C2C42ABCF00452CB6 /* ListUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUIComposer.swift; sourceTree = "<group>"; };
 		F412FF8E2C42AD4000452CB6 /* DetailUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUIComposer.swift; sourceTree = "<group>"; };
+		F443445D2C43D1A300FD8CCE /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F463A0E82BE314FB00CD161C /* ListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F463A0EB2BE314FB00CD161C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F463A0ED2BE314FB00CD161C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F412FDCE2C419D8D00452CB6 /* ModuleA.framework in Frameworks */,
+				F443445E2C43D1A300FD8CCE /* Core.framework in Frameworks */,
 				F412FF7C2C42A0AA00452CB6 /* ModuleB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +157,7 @@
 		F47ABB972BE32E4E0063C7AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F443445D2C43D1A300FD8CCE /* Core.framework */,
 				F412FF7B2C42A0AA00452CB6 /* ModuleB.framework */,
 				F412FE052C41A28A00452CB6 /* ModuleB.framework */,
 				F412FDCD2C419D8D00452CB6 /* ModuleA.framework */,
