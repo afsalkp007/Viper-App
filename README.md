@@ -6,6 +6,12 @@
 ##### Module B - consist of Detail screen with VIPER components
 ##### ListApp - is the app entry pont where we integrate all modules including Core, ModuleA and ModuleB
 
+#### Instruction to run the app
+##### Open the ListApp.xcworkspace inside Viper-App -> ListApp -> ListApp.xcworkspace, branch -> main
+##### press command + U by selecting the scheme "Core" to run unit tests
+##### press command + U by selecting the scheme "APIEndToEndTests" to run integration tests
+##### press command + B to build and command + R to run the app
+
 ## Used the following specs as per the instructions
 
 - Swift & UIKit ✅
