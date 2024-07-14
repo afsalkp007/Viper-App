@@ -20,5 +20,6 @@
 - Dark/Light ✅
 - Dynamic font ✅
 
+## App Architecture
 
-
+![app architecture](https://github.com/user-attachments/assets/ac4875b2-0111-4e42-b830-0e2b2826edcd)
