@@ -18,7 +18,7 @@ public final class RemoteListLoader: ListLoader {
 }
  
 extension RemoteListLoader {
-  enum Error: Swift.Error {
+  public enum Error: Swift.Error {
     case connectivity
     case invalidData
   }

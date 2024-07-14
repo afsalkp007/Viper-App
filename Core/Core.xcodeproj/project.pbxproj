@@ -26,7 +26,35 @@
 		F44343F82C43184E00FD8CCE /* Store.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = F44343F72C43184C00FD8CCE /* Store.xcdatamodeld */; };
 		F44344002C431A8700FD8CCE /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44343FF2C431A8700FD8CCE /* University.swift */; };
 		F443440C2C431F8700FD8CCE /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443440B2C431F8700FD8CCE /* Localized.swift */; };
+		F44344342C43C02B00FD8CCE /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44343582C43169D00FD8CCE /* Core.framework */; platformFilter = ios; };
+		F443443F2C43C0C700FD8CCE /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443443D2C43C0C700FD8CCE /* HTTPClientSpy.swift */; };
+		F44344402C43C0C700FD8CCE /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443443E2C43C0C700FD8CCE /* URLProtocolStub.swift */; };
+		F44344432C43C0E000FD8CCE /* LoadFeedFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44344412C43C0E000FD8CCE /* LoadFeedFromRemoteUseCaseTests.swift */; };
+		F44344442C43C0E000FD8CCE /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44344422C43C0E000FD8CCE /* URLSessionHTTPClientTests.swift */; };
+		F44344462C43C15300FD8CCE /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44344452C43C15300FD8CCE /* SharedTestHelpers.swift */; };
+		F44344482C43C1BC00FD8CCE /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44344472C43C1BC00FD8CCE /* XCTestCase+MemoryLeakTracking.swift */; };
+		F44344502C43C64700FD8CCE /* APIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443444F2C43C64700FD8CCE /* APIEndToEndTests.swift */; };
+		F44344512C43C64700FD8CCE /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44343582C43169D00FD8CCE /* Core.framework */; platformFilter = ios; };
+		F44344592C43C75700FD8CCE /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44344472C43C1BC00FD8CCE /* XCTestCase+MemoryLeakTracking.swift */; };
+		F443445A2C43C75A00FD8CCE /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44344452C43C15300FD8CCE /* SharedTestHelpers.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F44344352C43C02B00FD8CCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F443434F2C43169D00FD8CCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44343572C43169D00FD8CCE;
+			remoteInfo = Core;
+		};
+		F44344522C43C64700FD8CCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F443434F2C43169D00FD8CCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44343572C43169D00FD8CCE;
+			remoteInfo = Core;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F44343582C43169D00FD8CCE /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +77,17 @@
 		F44343F62C43184C00FD8CCE /* Store.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Store.xcdatamodel; sourceTree = "<group>"; };
 		F44343FF2C431A8700FD8CCE /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
 		F443440B2C431F8700FD8CCE /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		F44344302C43C02B00FD8CCE /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F443443A2C43C07900FD8CCE /* Core.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Core.xctestplan; sourceTree = "<group>"; };
+		F443443D2C43C0C700FD8CCE /* HTTPClientSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
+		F443443E2C43C0C700FD8CCE /* URLProtocolStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
+		F44344412C43C0E000FD8CCE /* LoadFeedFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadFeedFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		F44344422C43C0E000FD8CCE /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
+		F44344452C43C15300FD8CCE /* SharedTestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
+		F44344472C43C1BC00FD8CCE /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		F443444D2C43C64700FD8CCE /* APIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F443444F2C43C64700FD8CCE /* APIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndToEndTests.swift; sourceTree = "<group>"; };
+		F44344572C43C68800FD8CCE /* APIEndToEndTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = APIEndToEndTests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +98,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F443442D2C43C02B00FD8CCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44344342C43C02B00FD8CCE /* Core.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F443444A2C43C64700FD8CCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44344512C43C64700FD8CCE /* Core.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				F443435A2C43169D00FD8CCE /* Core */,
+				F44344312C43C02B00FD8CCE /* CoreTests */,
+				F443444E2C43C64700FD8CCE /* APIEndToEndTests */,
 				F44343592C43169D00FD8CCE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				F44343582C43169D00FD8CCE /* Core.framework */,
+				F44344302C43C02B00FD8CCE /* CoreTests.xctest */,
+				F443444D2C43C64700FD8CCE /* APIEndToEndTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +219,53 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		F44344312C43C02B00FD8CCE /* CoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				F443443A2C43C07900FD8CCE /* Core.xctestplan */,
+				F44344582C43C74900FD8CCE /* Helpers */,
+				F443443B2C43C0A700FD8CCE /* API */,
+			);
+			path = CoreTests;
+			sourceTree = "<group>";
+		};
+		F443443B2C43C0A700FD8CCE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F443443C2C43C0AC00FD8CCE /* Helpers */,
+				F44344412C43C0E000FD8CCE /* LoadFeedFromRemoteUseCaseTests.swift */,
+				F44344422C43C0E000FD8CCE /* URLSessionHTTPClientTests.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F443443C2C43C0AC00FD8CCE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F443443D2C43C0C700FD8CCE /* HTTPClientSpy.swift */,
+				F443443E2C43C0C700FD8CCE /* URLProtocolStub.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F443444E2C43C64700FD8CCE /* APIEndToEndTests */ = {
+			isa = PBXGroup;
+			children = (
+				F44344572C43C68800FD8CCE /* APIEndToEndTests.xctestplan */,
+				F443444F2C43C64700FD8CCE /* APIEndToEndTests.swift */,
+			);
+			path = APIEndToEndTests;
+			sourceTree = "<group>";
+		};
+		F44344582C43C74900FD8CCE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F44344472C43C1BC00FD8CCE /* XCTestCase+MemoryLeakTracking.swift */,
+				F44344452C43C15300FD8CCE /* SharedTestHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -191,6 +297,42 @@
 			productReference = F44343582C43169D00FD8CCE /* Core.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F443442F2C43C02B00FD8CCE /* CoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44344392C43C02B00FD8CCE /* Build configuration list for PBXNativeTarget "CoreTests" */;
+			buildPhases = (
+				F443442C2C43C02B00FD8CCE /* Sources */,
+				F443442D2C43C02B00FD8CCE /* Frameworks */,
+				F443442E2C43C02B00FD8CCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F44344362C43C02B00FD8CCE /* PBXTargetDependency */,
+			);
+			name = CoreTests;
+			productName = CoreTests;
+			productReference = F44344302C43C02B00FD8CCE /* CoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F443444C2C43C64700FD8CCE /* APIEndToEndTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44344542C43C64700FD8CCE /* Build configuration list for PBXNativeTarget "APIEndToEndTests" */;
+			buildPhases = (
+				F44344492C43C64700FD8CCE /* Sources */,
+				F443444A2C43C64700FD8CCE /* Frameworks */,
+				F443444B2C43C64700FD8CCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F44344532C43C64700FD8CCE /* PBXTargetDependency */,
+			);
+			name = APIEndToEndTests;
+			productName = APIEndToEndTests;
+			productReference = F443444D2C43C64700FD8CCE /* APIEndToEndTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,9 +340,17 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					F44343572C43169D00FD8CCE = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F443442F2C43C02B00FD8CCE = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+					F443444C2C43C64700FD8CCE = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -219,6 +369,8 @@
 			projectRoot = "";
 			targets = (
 				F44343572C43169D00FD8CCE /* Core */,
+				F443442F2C43C02B00FD8CCE /* CoreTests */,
+				F443444C2C43C64700FD8CCE /* APIEndToEndTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +381,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44343F82C43184E00FD8CCE /* Store.xcdatamodeld in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F443442E2C43C02B00FD8CCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F443444B2C43C64700FD8CCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +426,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F443442C2C43C02B00FD8CCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F443443F2C43C0C700FD8CCE /* HTTPClientSpy.swift in Sources */,
+				F44344402C43C0C700FD8CCE /* URLProtocolStub.swift in Sources */,
+				F44344462C43C15300FD8CCE /* SharedTestHelpers.swift in Sources */,
+				F44344432C43C0E000FD8CCE /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
+				F44344442C43C0E000FD8CCE /* URLSessionHTTPClientTests.swift in Sources */,
+				F44344482C43C1BC00FD8CCE /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44344492C43C64700FD8CCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44344502C43C64700FD8CCE /* APIEndToEndTests.swift in Sources */,
+				F44344592C43C75700FD8CCE /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				F443445A2C43C75A00FD8CCE /* SharedTestHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F44344362C43C02B00FD8CCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = F44343572C43169D00FD8CCE /* Core */;
+			targetProxy = F44344352C43C02B00FD8CCE /* PBXContainerItemProxy */;
+		};
+		F44344532C43C64700FD8CCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = F44343572C43169D00FD8CCE /* Core */;
+			targetProxy = F44344522C43C64700FD8CCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F443435D2C43169D00FD8CCE /* Debug */ = {
@@ -464,6 +668,73 @@
 			};
 			name = Release;
 		};
+		F44344372C43C02B00FD8CCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SC3D86JVL3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.ListApp.CoreTests.CoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F44344382C43C02B00FD8CCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SC3D86JVL3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.ListApp.CoreTests.CoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F44344552C43C64700FD8CCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SC3D86JVL3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.ListApp.APIEndToEndTests.APIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F44344562C43C64700FD8CCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SC3D86JVL3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afsal.ListApp.APIEndToEndTests.APIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -481,6 +752,24 @@
 			buildConfigurations = (
 				F44343602C43169D00FD8CCE /* Debug */,
 				F44343612C43169D00FD8CCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44344392C43C02B00FD8CCE /* Build configuration list for PBXNativeTarget "CoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44344372C43C02B00FD8CCE /* Debug */,
+				F44344382C43C02B00FD8CCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44344542C43C64700FD8CCE /* Build configuration list for PBXNativeTarget "APIEndToEndTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44344552C43C64700FD8CCE /* Debug */,
+				F44344562C43C64700FD8CCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
